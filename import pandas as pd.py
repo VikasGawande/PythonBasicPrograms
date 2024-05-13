@@ -49,23 +49,26 @@
 # print(np.mean(arr,axis=0))  #if axis=0 then column wise and if axis=1 then row wise
 
 
-# import numpy as np
-# arr = np.array(
-#     [
-#         [1, 2, 3, 5, 7],
-#         [4, 7, 8, 6, 8],
-#         [7, 2, 9, 7, 5],
-#         [7, 3, 9, 7, 5],
-#         [7, 4, 9, 6, 5],
-#     ]
-# )
+import numpy as np
+arr = np.array(
+    [
+        [1, 2, 3, 5, 7],
+        [4, 7, 8, 6, 8],
+        [7, 2, 9, 7, 5],
+        [7, 3, 9, 7, 5],
+        [7, 4, 9, 6, 5]   
+    ]
+)
 # print(arr)
 # print("-----------")
 # print(np.mean(arr,axis=0))
 # print("---------")
 # print(np.median(arr, axis=0))
-# print(arr[:2, -2:])  # 1):2,:2 ghetla tr top left corner yenar #2)-2:,-2: ghetla tr Bottum right yenar
-                       # 3)3:,:2 ghetla tr bottom left che 1,2 index print honar. #4):2,-2: ghetla tr top right yenar 
+print(arr[:2, :2],"Top Left")
+print(arr[:2, -2:],"Top right")
+print(arr[3:, :2],"bottom Left")
+print(arr[-2:, -2:],"Bottom right")  # 1):2,:2 ghetla tr top left corner yenar #2)-2:,-2: ghetla tr Bottum right yenar
+                                     # 3)3:,:2 ghetla tr bottom left che 1,2 index print honar. #4):2,-2: ghetla tr top right yenar 
 
 # import numpy as np
 # import pandas as pd
@@ -85,15 +88,15 @@
 # print(ts.max())
 # print(ts.min())
 
-import numpy as np
-arr=np.array([
-    [1,2,3],
-    [4,5,6],
-    [7,8,9],
-    [10,11,12]
-])
-print(arr)
-print(np.mean(arr,axis=0))
+# import numpy as np
+# arr=np.array([
+#     [1,2,3],
+#     [4,5,6],
+#     [7,8,9],
+#     [10,11,12]
+# ])
+# print(arr)
+# print(np.mean(arr,axis=0))
 
 
 
