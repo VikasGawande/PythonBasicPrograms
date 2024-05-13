@@ -51,12 +51,13 @@
 # ])
 # print(arr)
 # print(np.mean(arr,axis=1))
+# print(np.sum(arr,axis=0))
 
-import pandas as pd
-import numpy as np
-s=np.array([12,65,35,12,89])
-arr=pd.Series(s)
-k=arr.unique()
-print(k)
-print(k.max())
-print(k.min())
+# import pandas as pd
+# import numpy as np
+# s=np.array([12,65,35,12,89])
+# arr=pd.Series(s)
+# k=arr.unique()
+# print(k)
+# print(k.max())
+# print(k.min())
