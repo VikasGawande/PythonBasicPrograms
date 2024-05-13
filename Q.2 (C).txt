@@ -1,0 +1,37 @@
+Here are the key differences between class methods and static methods:
+
+Class Methods:
+A class method is a method that is bound to the class itself rather than to instances of the class.
+It is defined using the @classmethod decorator.
+The first parameter of a class method is traditionally named cls, which refers to the class itself.
+Class methods can access and modify class-level variables.
+They are often used to create factory methods or to access or modify class-level attributes.
+Class methods can be called on either the class itself or on instances of the class.
+
+Example:
+python
+class MyClass:
+    class_var = 10  # Class-level variable
+
+    @classmethod
+    def class_method(cls):
+        print("Class method called")
+        print("Class variable:", cls.class_var)
+
+MyClass.class_method()  # Calling the class method on the class
+Static Methods:
+A static method is a method that is bound to the class itself and does not have access to the class or instance state.
+It is defined using the @staticmethod decorator.
+Static methods do not require a reference to either the class (cls) or an instance (self) as the first parameter.
+They are similar to regular functions but are included in the class for organizational purposes.
+Static methods are often used for utility functions that are related to the class but do not require access to instance or class variables.
+They can be called on either the class itself or on instances of the class, but they do not have access to instance or class variables.
+
+Example:
+python
+class MyClass:
+    @staticmethod
+    def static_method():
+        print("Static method called")
+
+MyClass.static_method()  # Calling the static method on the class
